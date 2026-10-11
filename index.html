@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gamedev Backups is a personal utility for locally encrypted backups to Google Drive.">
+    <title>Gamedev Backups</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #172c38;
+        background: #f4f7f6;
+        line-height: 1.65;
+      }
+
+      * { box-sizing: border-box; }
+
+      body { margin: 0; }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 76px 24px 40px;
+      }
+
+      .eyebrow {
+        color: #286b5b;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 12px 0 20px;
+        font-size: clamp(2.5rem, 7vw, 3.7rem);
+        line-height: 1.1;
+        letter-spacing: -0.045em;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+        line-height: 1.35;
+      }
+
+      p { margin: 0 0 16px; }
+
+      .intro {
+        max-width: 630px;
+        color: #435a66;
+        font-size: 1.2rem;
+      }
+
+      .details {
+        margin-top: 36px;
+        padding: 28px;
+        border: 1px solid #d7e2de;
+        border-radius: 16px;
+        background: #fff;
+      }
+
+      section + section {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #e4ebe8;
+      }
+
+      section p:last-child { margin-bottom: 0; }
+
+      a {
+        color: #176c56;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover { color: #104b3c; }
+
+      a:focus-visible {
+        outline: 3px solid #e0aa32;
+        outline-offset: 5px;
+      }
+
+      footer {
+        margin-top: 28px;
+        color: #556b75;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 480px) {
+        main { padding-top: 44px; }
+        .details { padding: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Personal backup utility</p>
+        <h1>Gamedev Backups</h1>
+        <p class="intro">Locally encrypted backups of selected files, stored in the owner's Google Drive.</p>
+      </header>
+
+      <div class="details">
+        <section aria-labelledby="about-heading">
+          <h2 id="about-heading">What the app does</h2>
+          <p>Gamedev Backups is a private, personal-use desktop utility. It runs locally and uses restic to encrypt selected files before rclone transfers the backup data to Google Drive. It can also retrieve backups for local restoration.</p>
+        </section>
+
+        <section aria-labelledby="access-heading">
+          <h2 id="access-heading">Why it connects to Google Drive</h2>
+          <p>Google authorization lets the app create and manage its backup files in the owner's Drive. The app requests the <code>drive.file</code> permission, which limits access to files created by or explicitly made available to the app.</p>
+        </section>
+
+        <section aria-labelledby="privacy-heading">
+          <h2 id="privacy-heading">Privacy and contact</h2>
+          <p>The backup software and its credentials stay on the owner's device. The app has no advertising or analytics. Read the <a href="privacy.html">Privacy Policy</a> for details about data use, storage, and access controls.</p>
+          <p>For questions about Gamedev Backups, use the support email shown on its Google authorization consent screen.</p>
+        </section>
+      </div>
+
+      <footer>Gamedev Backups · Personal use</footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy Policy for Gamedev Backups, a personal backup utility that uses Google Drive.">
+    <title>Privacy Policy · Gamedev Backups</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #172c38;
+        background: #f4f7f6;
+        line-height: 1.65;
+      }
+
+      * { box-sizing: border-box; }
+
+      body { margin: 0; }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 44px 24px;
+      }
+
+      nav {
+        margin-bottom: 36px;
+        font-size: 0.95rem;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2.2rem, 7vw, 3rem);
+        line-height: 1.15;
+        letter-spacing: -0.04em;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+        line-height: 1.35;
+      }
+
+      p { margin: 0 0 14px; }
+
+      .updated {
+        margin-bottom: 28px;
+        color: #556b75;
+        font-size: 0.9rem;
+      }
+
+      .policy {
+        padding: 28px;
+        border: 1px solid #d7e2de;
+        border-radius: 16px;
+        background: #fff;
+      }
+
+      section + section {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #e4ebe8;
+      }
+
+      section p:last-child { margin-bottom: 0; }
+
+      a {
+        color: #176c56;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover { color: #104b3c; }
+
+      a:focus-visible {
+        outline: 3px solid #e0aa32;
+        outline-offset: 5px;
+      }
+
+      footer {
+        margin-top: 28px;
+        color: #556b75;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 480px) {
+        .policy { padding: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Main navigation"><a href="index.html">← Gamedev Backups</a></nav>
+
+      <header>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Gamedev Backups · Last updated October 11, 2026</p>
+      </header>
+
+      <div class="policy">
+        <section aria-labelledby="purpose-heading">
+          <h2 id="purpose-heading">Purpose</h2>
+          <p>Gamedev Backups is a personal-use backup utility operated by its owner. It runs locally, encrypts selected files with restic, and uses rclone to store and retrieve the encrypted backup data in the owner's Google Drive.</p>
+        </section>
+
+        <section aria-labelledby="data-heading">
+          <h2 id="data-heading">Data accessed and used</h2>
+          <p>The app reads the local files selected for backup. Through Google OAuth, it requests the <code>drive.file</code> permission to create, read, update, and delete backup files and folders created by or explicitly made available to the app.</p>
+          <p>It uses the contents and metadata of those Drive files, such as file identifiers, names, and sizes, only to upload, verify, maintain, and restore backups. Google access and refresh tokens are used to authorize these operations.</p>
+        </section>
+
+        <section aria-labelledby="storage-heading">
+          <h2 id="storage-heading">Storage and protection</h2>
+          <p>Selected backup content is encrypted locally with restic before it is uploaded to Google Drive. OAuth credentials, tokens, backup configuration, and the information needed to decrypt backups are kept locally on the owner's device. The app does not send them to a separate application server.</p>
+          <p>Encrypted backups and their Drive metadata remain in the owner's Google Drive until removed by the owner's backup retention settings or deleted by the owner. Local files and credentials remain until the owner removes them.</p>
+        </section>
+
+        <section aria-labelledby="sharing-heading">
+          <h2 id="sharing-heading">Sharing and other services</h2>
+          <p>The app does not sell data, use data for advertising, or include analytics. It does not share Google user data with other people or unrelated services. Google receives the encrypted backup data and the metadata necessary to provide Google Drive storage and authorization, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+          <p>This informational website does not access backups or Google authorization tokens and does not set analytics cookies. Its hosting provider may process routine request metadata, such as an IP address, browser information, and access time, to deliver and secure the website.</p>
+        </section>
+
+        <section aria-labelledby="control-heading">
+          <h2 id="control-heading">Control, revocation, and deletion</h2>
+          <p>The owner can stop backups locally and revoke the app's authorization through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access prevents future authorized Drive operations; it does not delete existing backups.</p>
+          <p>To remove stored backups, delete the app's backup files in Google Drive and empty the Drive trash as needed. To remove local credentials or backup data, delete them from the device. Stop any scheduled backups first to prevent new copies from being created.</p>
+        </section>
+
+        <section aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact and changes</h2>
+          <p>For privacy questions, contact the app owner using the support email shown on the Gamedev Backups Google authorization consent screen.</p>
+          <p>This page will be updated if the app's data practices change. The date above identifies the latest revision.</p>
+        </section>
+      </div>
+
+      <footer><a href="index.html">Gamedev Backups home</a></footer>
+    </main>
+  </body>
+</html>
