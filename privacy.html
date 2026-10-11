@@ -100,7 +100,7 @@
       <div class="policy">
         <section aria-labelledby="purpose-heading">
           <h2 id="purpose-heading">Purpose</h2>
-          <p>Gamedev Backups is a personal-use backup utility operated by its owner. It runs locally, encrypts selected files with restic, and uses rclone to store and retrieve the encrypted backup data in the owner's Google Drive.</p>
+          <p>Gamedev Backups is a personal-use backup utility operated by its owner. It runs locally, packages selected files into ordinary backup archives, and uses rclone to store and retrieve them in the owner's Google Drive.</p>
         </section>
 
         <section aria-labelledby="data-heading">
@@ -111,13 +111,13 @@
 
         <section aria-labelledby="storage-heading">
           <h2 id="storage-heading">Storage and protection</h2>
-          <p>Selected backup content is encrypted locally with restic before it is uploaded to Google Drive. OAuth credentials, tokens, backup configuration, and the information needed to decrypt backups are kept locally on the owner's device. The app does not send them to a separate application server.</p>
-          <p>Encrypted backups and their Drive metadata remain in the owner's Google Drive until removed by the owner's backup retention settings or deleted by the owner. Local files and credentials remain until the owner removes them.</p>
+          <p>The owner has chosen ordinary backup archives without a separate archive password. Access is controlled by the owner's Google Drive account and sharing settings. The app does not create public sharing links. OAuth credentials and tokens used to access Drive are kept locally on the owner's device and are not included in these archives.</p>
+          <p>Backup archives and their Drive metadata remain in the owner's Google Drive until removed by the owner's backup retention settings or deleted by the owner. Local files and credentials remain until the owner removes them.</p>
         </section>
 
         <section aria-labelledby="sharing-heading">
           <h2 id="sharing-heading">Sharing and other services</h2>
-          <p>The app does not sell data, use data for advertising, or include analytics. It does not share Google user data with other people or unrelated services. Google receives the encrypted backup data and the metadata necessary to provide Google Drive storage and authorization, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+          <p>The app does not sell data, use data for advertising, or include analytics. It does not share Google user data with other people or unrelated services. Google receives the backup archives and the metadata necessary to provide Google Drive storage and authorization, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
           <p>This informational website does not access backups or Google authorization tokens and does not set analytics cookies. Its hosting provider may process routine request metadata, such as an IP address, browser information, and access time, to deliver and secure the website.</p>
         </section>
 
